@@ -62,5 +62,7 @@ public class diaDaSemana {
         }
 
         System.out.println(dia + " é o " + num + " dia da semana e o resultado é: " + result + ".");
+
+        input.close();
     }
 }
