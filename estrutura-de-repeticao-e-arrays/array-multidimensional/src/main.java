@@ -9,17 +9,17 @@ public class main {
 
         // Declaração das variáveis
         Random random = new Random();
-        int[][] M = new int[4][4];
+        int[][] m = new int[4][4];
         int menorNumero = 10;
         int linha = 0;
         int coluna = 0;
 
         // Processamento
-        for (int i = 0; i <= M.length - 1; i++) {
-            for (int j = 0; j <= M[i].length - 1; j++){
-                M[i][j] = random.nextInt(9);
-                if (M[i][j] < menorNumero){
-                    menorNumero = M[i][j];
+        for (int i = 0; i <= m.length - 1; i++) {
+            for (int j = 0; j <= m[i].length - 1; j++){
+                m[i][j] = random.nextInt(100);
+                if (m[i][j] < menorNumero){
+                    menorNumero = m[i][j];
                     linha = i;
                     coluna = j;
                 }
@@ -29,9 +29,9 @@ public class main {
         // Saída
         System.out.println("Matriz 4x4:");
 
-        for (int i = 0; i <= M.length - 1; i++) {
-            for (int j = 0; j <= M[i].length - 1; j++){
-                System.out.print(M[i][j] + "  ");
+        for (int i = 0; i <= m.length - 1; i++) {
+            for (int j = 0; j <= m[i].length - 1; j++){
+                System.out.print(m[i][j] + "  ");
             }
             System.out.print("\n");
         }
