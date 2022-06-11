@@ -36,6 +36,6 @@ public class main {
             System.out.print("\n");
         }
 
-        System.out.println("Menor número da matriz = " + menorNumero + " (posição = " + linha + ", " + coluna + ")");
+        System.out.println("Menor número da matriz = " + menorNumero + " (posição = " + (linha+1) + ", " + (coluna+1) + ")");
     }
 }
